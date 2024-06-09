@@ -81,7 +81,7 @@ export default function DrawerAppBar(props: Props) {
                     </Typography>
 
 
-                    
+
 
 
 
@@ -92,23 +92,23 @@ export default function DrawerAppBar(props: Props) {
                             </Button>
                         ))}
                     </Box>
-
-
                     <IconButton
-                            size="large"
-                            aria-label="show 17 new notifications"
-                            color="inherit"
-                        >
-                            <Badge badgeContent={0} color="error">
-                                <ShoppingCart />
-                            </Badge>
-                        </IconButton>
+                        size="large"
+                        aria-label="show 17 new notifications"
+                        color="inherit"
+                    >
+                        <Badge badgeContent={0} color="error">
+                            <ShoppingCart />
+                        </Badge>
+                    </IconButton>
+
+
 
 
                     <Box
                         display={'flex'}
-                    
-                        sx={{ display : {lg : 'none', sm : 'block' } }}
+
+                        sx={{ display: { lg: 'none', sm: 'block' } }}
                     >
                         <Typography
                             variant="h6"
