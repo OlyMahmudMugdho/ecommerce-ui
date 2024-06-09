@@ -16,7 +16,6 @@ import Button from '@mui/material/Button';
 import { Badge } from '@mui/material';
 import { ShoppingCart } from '@mui/icons-material';
 
-
 interface Props {
     /**
      * Injected by the documentation to work in an iframe.
@@ -25,6 +24,9 @@ interface Props {
     window?: () => Window;
 }
 
+const text = {
+    color: "red"
+};
 const drawerWidth = 240;
 const navItems = ['Home', 'About', 'Contact'];
 
@@ -59,7 +61,7 @@ export default function DrawerAppBar(props: Props) {
     return (
         <Box sx={{ display: 'flex' }}>
             <CssBaseline />
-            <AppBar component="nav">
+            <AppBar component="nav" color='default'>
                 <Toolbar>
                     <IconButton
                         color="inherit"
@@ -79,24 +81,59 @@ export default function DrawerAppBar(props: Props) {
                     </Typography>
 
 
+                    
+
+
 
                     <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
                         {navItems.map((item) => (
-                            <Button key={item} sx={{ color: '#fff' }}>
+                            <Button key={item} sx={{ color: 'black' }}>
                                 {item}
                             </Button>
                         ))}
                     </Box>
+
+
                     <IconButton
-                        size="large"
-                        aria-label="show 17 new notifications"
-                        color="inherit"
+                            size="large"
+                            aria-label="show 17 new notifications"
+                            color="inherit"
+                        >
+                            <Badge badgeContent={0} color="error">
+                                <ShoppingCart />
+                            </Badge>
+                        </IconButton>
+
+
+                    <Box
+                        display={'flex'}
+                    
+                        sx={{ display : {lg : 'none', sm : 'block' } }}
                     >
-                        <Badge badgeContent={0} color="error">
-                            <ShoppingCart />
-                        </Badge>
-                    </IconButton>
+                        <Typography
+                            variant="h6"
+                            component="span"
+                            paddingX={2}
+                            paddingRight={4}
+                            marginRight={5}
+                            justifyContent={"space-between"}
+                        >
+                            E-commerce
+                        </Typography>
+                        <IconButton
+                            size="large"
+                            aria-label="show 17 new notifications"
+                            color="inherit"
+                        >
+                            <Badge badgeContent={0} color="error">
+                                <ShoppingCart />
+                            </Badge>
+                        </IconButton>
+                    </Box>
+
+
                 </Toolbar>
+
             </AppBar>
             <nav>
                 <Drawer
