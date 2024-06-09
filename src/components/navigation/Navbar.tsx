@@ -91,16 +91,16 @@ export default function DrawerAppBar(props: Props) {
                                 {item}
                             </Button>
                         ))}
+                        <IconButton
+                            size="large"
+                            aria-label="show 17 new notifications"
+                            color="inherit"
+                        >
+                            <Badge badgeContent={0} color="error">
+                                <ShoppingCart />
+                            </Badge>
+                        </IconButton>
                     </Box>
-                    <IconButton
-                        size="large"
-                        aria-label="show 17 new notifications"
-                        color="inherit"
-                    >
-                        <Badge badgeContent={0} color="error">
-                            <ShoppingCart />
-                        </Badge>
-                    </IconButton>
 
 
 
