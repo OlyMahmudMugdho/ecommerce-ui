@@ -81,7 +81,7 @@ export default function DrawerAppBar(props: Props) {
                     </Typography>
 
 
-                    <SearchBar />
+                    <SearchBar  />
 
 
                     <div>
