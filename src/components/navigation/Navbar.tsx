@@ -72,17 +72,24 @@ export default function DrawerAppBar(props: Props) {
                     >
                         <MenuIcon />
                     </IconButton>
-                    <Typography
-                        variant="h6"
-                        component="div"
-                        sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
-                    >
+
+
+                    <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                         E-commerce
                     </Typography>
 
-
-
-
+                    <div>
+                        <IconButton
+                            size="large"
+                            aria-label="account of current user"
+                            aria-controls="menu-appbar"
+                            aria-haspopup="true"
+                            color="inherit"
+                            sx={{ display : { lg : 'none', sm : 'block'}}}
+                        >
+                            <ShoppingCart />
+                        </IconButton>
+                    </div>
 
 
                     <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
@@ -91,35 +98,6 @@ export default function DrawerAppBar(props: Props) {
                                 {item}
                             </Button>
                         ))}
-                        <IconButton
-                            size="large"
-                            aria-label="show 17 new notifications"
-                            color="inherit"
-                        >
-                            <Badge badgeContent={0} color="error">
-                                <ShoppingCart />
-                            </Badge>
-                        </IconButton>
-                    </Box>
-
-
-
-
-                    <Box
-                        display={'flex'}
-
-                        sx={{ display: { lg: 'none', sm: 'block' } }}
-                    >
-                        <Typography
-                            variant="h6"
-                            component="span"
-                            paddingX={2}
-                            paddingRight={4}
-                            marginRight={5}
-                            justifyContent={"space-between"}
-                        >
-                            E-commerce
-                        </Typography>
                         <IconButton
                             size="large"
                             aria-label="show 17 new notifications"
