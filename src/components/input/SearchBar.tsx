@@ -15,7 +15,6 @@ export default function SearchBar() {
 
             >
                 <InputBase
-                    sx={{ ml: 1, flex: 1 }}
                     placeholder="Search Products"
                     inputProps={{ 'aria-label': 'Search Products' }}
                     color='primary'

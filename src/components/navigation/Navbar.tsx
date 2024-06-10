@@ -76,12 +76,12 @@ export default function DrawerAppBar(props: Props) {
                     </IconButton>
 
 
-                    <Typography paddingX={2} variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                    <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                         Shop
                     </Typography>
 
 
-                    <SearchBar  />
+                    <SearchBar/>
 
 
                     <div>
