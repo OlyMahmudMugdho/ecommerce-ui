@@ -3,11 +3,14 @@ import Box from '@mui/material/Box';
 
 type Props = {
   header: string,
+  cards: CardInfo[]
+}
+
+type CardInfo = {
   name: string,
   category: string,
   image: string
 }
-
 
 export default function Section(props: Props) {
   return (
