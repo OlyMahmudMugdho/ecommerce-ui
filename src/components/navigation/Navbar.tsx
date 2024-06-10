@@ -76,8 +76,8 @@ export default function DrawerAppBar(props: Props) {
                     </IconButton>
 
 
-                    <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                        E-commerce
+                    <Typography paddingX={2} variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                        Shop
                     </Typography>
 
 
