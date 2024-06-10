@@ -1,7 +1,6 @@
 import { Box } from "@mui/material"
 import Image from "next/image"
 import banner from "../../../public/banner.jpg"
-import { BrandingWatermarkOutlined } from "@mui/icons-material"
 
 type Props = {}
 
