@@ -4,6 +4,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
+import Link from 'next/link';
 
 type Props = {
     image: string,
@@ -12,30 +13,31 @@ type Props = {
     link: string
 }
 
-export default function MultiActionAreaCard(props : Props) {
+export default function MultiActionAreaCard(props: Props) {
     return (
         <Card sx={{ maxWidth: 345 }}>
             <CardActionArea>
                 <CardMedia
                     component="img"
                     height="140"
-                    image="/static/images/cards/contemplative-reptile.jpg"
-                    alt="green iguana"
+                    image={props.image}
+                    alt={props.title}
                 />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
-                        Lizard
+                        {props.title}
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
-                        Lizards are a widespread group of squamate reptiles, with over 6,000
-                        species, ranging across all continents except Antarctica
+                        {props.description}
                     </Typography>
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button size="small" color="primary">
-                    Share
-                </Button>
+                <Link href={props.link}>
+                    <Button size="small" color="primary">
+                        View Details
+                    </Button>
+                </Link>
             </CardActions>
         </Card>
     );
