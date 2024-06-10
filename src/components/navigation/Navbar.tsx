@@ -17,6 +17,7 @@ import Button from '@mui/material/Button';
 import { Badge } from '@mui/material';
 import { ShoppingCart } from '@mui/icons-material';
 
+
 interface Props {
     /**
      * Injected by the documentation to work in an iframe.
@@ -79,6 +80,8 @@ export default function DrawerAppBar(props: Props) {
                         E-commerce
                     </Typography>
 
+
+
                     <div>
                         <IconButton
                             size="large"
@@ -86,7 +89,7 @@ export default function DrawerAppBar(props: Props) {
                             aria-controls="menu-appbar"
                             aria-haspopup="true"
                             color="inherit"
-                            sx={{ display : { lg : 'none', sm : 'block'}}}
+                            sx={{ display: { lg: 'none', sm: 'block' } }}
                         >
                             <ShoppingCart />
                         </IconButton>
@@ -132,7 +135,7 @@ export default function DrawerAppBar(props: Props) {
                 </Drawer>
             </nav>
             <Box component="main" sx={{ p: 3 }}>
-                
+
             </Box>
         </Box>
     );
