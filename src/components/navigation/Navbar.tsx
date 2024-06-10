@@ -16,7 +16,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { Badge } from '@mui/material';
 import { ShoppingCart } from '@mui/icons-material';
-
+import SearchBar from '../input/SearchBar';
 
 interface Props {
     /**
@@ -80,6 +80,8 @@ export default function DrawerAppBar(props: Props) {
                         E-commerce
                     </Typography>
 
+
+                    <SearchBar />
 
 
                     <div>
