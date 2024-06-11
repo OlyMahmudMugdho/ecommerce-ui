@@ -19,9 +19,8 @@ export default function RootLayout({
     <html lang="en">
 
       <body className={inter.className +  "min-h-screen"}>
-        <PrimarySearchAppBar suppressHydrationWarning></PrimarySearchAppBar>
+        <PrimarySearchAppBar ></PrimarySearchAppBar>
         {children}
-        
       </body>
     </html>
   );
