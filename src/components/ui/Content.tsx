@@ -1,11 +1,25 @@
 import Box from '@mui/material/Box';
 import Section, {CardInfo} from "./Section"
-
+import shirt from "./../../../public/shirt.jpg"
 const newProducts : CardInfo[] = [
     {
         name:  "Black Shirt",
         category: "Fashion",
-        image: "https://google.com",
+        image: "https://www.pixelbyhand.com/wp-content/uploads/2022/06/shirt-ecommerce-product-image-with-white-background.jpg",
+        description : "some shirts",
+        link : "http://localhost:3000"
+    },
+    {
+        name:  "Black T-shirt",
+        category: "Fashion",
+        image: "https://www.pixelbyhand.com/wp-content/uploads/2022/06/shirt-ecommerce-product-image-with-white-background.jpg",
+        description : "some shirts",
+        link : "http://localhost:3000"
+    },
+    {
+        name:  "White T-shirt",
+        category: "Fashion",
+        image: "https://www.pixelbyhand.com/wp-content/uploads/2022/06/shirt-ecommerce-product-image-with-white-background.jpg",
         description : "some shirts",
         link : "http://localhost:3000"
     }
@@ -14,7 +28,12 @@ const newProducts : CardInfo[] = [
 export default function Content() {
   return (
     <Box className='w-full px-5' component="section">
-      <Section header={"New Products"} cards={newProducts} />
+      <div className={"sm:hidden md:block"}>
+          <Section header={"New Products"} cards={newProducts} />
+      </div>
+        <div className='flex md:hidden'>
+
+        </div>
     </Box>
   );
 }
