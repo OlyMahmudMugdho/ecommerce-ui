@@ -1,6 +1,8 @@
 import Box from '@mui/material/Box';
 import Section, {CardInfo} from "./Section"
-import shirt from "./../../../public/shirt.jpg"
+import ProductCarouselItem from "./ProductCarouselItem"
+
+
 const newProducts : CardInfo[] = [
     {
         name:  "Black Shirt",
@@ -32,7 +34,7 @@ export default function Content() {
           <Section header={"New Products"} cards={newProducts} />
       </div>
         <div className='flex md:hidden'>
-
+            <ProductCarouselItem header={"New Products"} cards={newProducts} />
         </div>
     </Box>
   );
