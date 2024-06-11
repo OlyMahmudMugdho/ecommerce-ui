@@ -4,7 +4,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import ProductCard from './ProductCard'
 
-type Props = {
+export type CardProps = {
   header: string,
   cards: CardInfo[]
 }
@@ -17,7 +17,7 @@ export type CardInfo = {
     link: string
 }
 
-export default function Section(props : Props) {
+export default function Section(props : CardProps) {
   return (
     <Box className=' hidden md:flex flex-col justify-between items-center' component="section" >
       <Box
