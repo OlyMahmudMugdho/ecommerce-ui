@@ -16,7 +16,7 @@ import {CardInfo} from "@/components/ui/Section";
 
 export default function MultiActionAreaCard(props: CardInfo) {
     return (
-        <Card className="w-full" sx={{ maxWidth: 300, minWidth : 200 }}>
+        <Card className="w-full" sx={{ maxWidth: 345 }}>
             <CardActionArea>
                 <CardMedia
                     component="img"
