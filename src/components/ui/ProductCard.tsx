@@ -5,15 +5,16 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
 import Link from 'next/link';
+import {CardInfo} from "@/components/ui/Section";
 
-type Props = {
-    image: string,
-    title: string,
-    description: string,
-    link: string
-}
+// type Props = {
+//     image: string,
+//     title: string,
+//     description: string,
+//     link: string
+// }
 
-export default function MultiActionAreaCard(props: Props) {
+export default function MultiActionAreaCard(props: CardInfo) {
     return (
         <Card sx={{ maxWidth: 345 }}>
             <CardActionArea>
@@ -21,11 +22,11 @@ export default function MultiActionAreaCard(props: Props) {
                     component="img"
                     height="140"
                     image={props.image}
-                    alt={props.title}
+                    alt={props.name}
                 />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
-                        {props.title}
+                        {props.name}
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
                         {props.description}
