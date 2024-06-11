@@ -5,7 +5,7 @@ import Section from "./Section"
 export default function Content() {
   return (
     <Box className='w-full px-5' component="section">
-      <Section />
+      <Section header={"New Products"} />
     </Box>
   );
 }
