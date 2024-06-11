@@ -19,7 +19,7 @@ export type CardInfo = {
 
 export default function Section(props : Props) {
   return (
-    <Box className='flex flex-col justify-between items-center' component="section" >
+    <Box className=' hidden md:flex flex-col justify-between items-center' component="section" >
       <Box
           className='flex w-full items-center justify-between'
           display="flex"
@@ -33,7 +33,7 @@ export default function Section(props : Props) {
       </Box>
 
         <Box
-            className='flex w-full items-center justify-between'
+            className='flex py-2  w-full items-center justify-center gap-4 wrap flex-auto'
             display="flex"
             alignItems="center"
         >
