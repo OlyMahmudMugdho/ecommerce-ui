@@ -29,8 +29,8 @@ const newProducts : CardInfo[] = [
 
 export default function Content() {
   return (
-    <Box className='w-full px-5' component="section">
-      <div className={"sm:hidden md:block"}>
+    <Box className='w-full px-7 py-5' component="section">
+      <div className={"sm:hidden md:block "}>
           <Section header={"New Products"} cards={newProducts} />
       </div>
         <div className='flex md:hidden'>
