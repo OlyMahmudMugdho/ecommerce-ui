@@ -50,8 +50,8 @@ async function fetchData() {
 
 export default async function Content() {
 
-    console.log(await fetchData());
-    const BnewProducts = await fetchData();
+    // console.log(await fetchData());
+    // const BnewProducts = await fetchData();
 
   return (
     <Box className='w-full px-7 py-5' component="section">
