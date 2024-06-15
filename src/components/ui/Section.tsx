@@ -25,7 +25,7 @@ export default function Section(props : CardProps) {
           display="flex"
           alignItems="center"
       >
-          <Typography className={'text-2xl'} variant="h4" component="h4">
+          <Typography className={'text-2xl my-3'} variant="h4" component="h4">
               {props.header}
           </Typography>
 
