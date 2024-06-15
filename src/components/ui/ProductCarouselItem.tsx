@@ -6,6 +6,7 @@ import Card from '@mui/joy/Card';
 import {CardInfo, CardProps} from "@/components/ui/Section";
 import Image from "next/image";
 import Button from "@mui/material/Button";
+import Link from "next/link";
 
 
 
@@ -37,18 +38,20 @@ export default function CarouselRatio(props : CardProps) {
                 }}
             >
                 {props.cards.map((item) => (
-                    <Card className={"w-full"} orientation="horizontal" size="sm" key={item.name} variant="outlined">
-                        <AspectRatio ratio="1" sx={{ minWidth: 60 }}>
-                            <img
-                                src={`${item.image}?h=120&fit=crop&auto=format`}
-                                alt={item.name}
-                            />
-                        </AspectRatio>
-                        <Box sx={{ whiteSpace: 'nowrap', mx: 1 }}>
-                            <Typography level="title-md">{item.name}</Typography>
-                            <Typography level="body-sm">{item.description}</Typography>
-                        </Box>
-                    </Card>
+                    <Link href={item.link} key={item.name}>
+                        <Card className={"w-full"} orientation="horizontal" size="sm"  variant="outlined">
+                            <AspectRatio ratio="1" sx={{ minWidth: 60 }}>
+                                <img
+                                    src={`${item.image}?h=120&fit=crop&auto=format`}
+                                    alt={item.name}
+                                />
+                            </AspectRatio>
+                            <Box sx={{ whiteSpace: 'nowrap', mx: 1 }}>
+                                <Typography level="title-md">{item.name}</Typography>
+                                <Typography level="body-sm">{item.description}</Typography>
+                            </Box>
+                        </Card>
+                    </Link>
                 ))}
             </Box>
         </Box>
